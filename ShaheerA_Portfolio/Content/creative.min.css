@@ -5416,6 +5416,7 @@ a.close.disabled {
 
 .modal {
     position: fixed;
+    margin: 0 auto;
     top: 0;
     left: 0;
     z-index: 1050;

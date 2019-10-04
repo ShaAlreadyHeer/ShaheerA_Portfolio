@@ -114,6 +114,7 @@
     <Content Include="Fonts\WebFonts\fa-solid-900.woff" />
     <Content Include="Fonts\WebFonts\fa-solid-900.woff2" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\ShaheerAhmedPortfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
