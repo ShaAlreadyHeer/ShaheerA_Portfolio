@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Shaheer Ahmed Portfolio</title>
 
     <!-- Font Awesome Icons -->
     <link href="Fonts/all.min.css" rel="stylesheet" type="text/css">
@@ -221,8 +221,8 @@
     <!-- Call to Action Section -->
     <section class="page-section bg-dark text-white">
         <div class="container text-center">
-            <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+            <h2 class="mb-4">Future stuff to put here, don't know what yet</h2>
+            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Temporary</a>
         </div>
     </section>
 
@@ -238,13 +238,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                    <div>+1 (336) 875-0766</div>
+                    <button class="btn" data-toggle="modal" data-target="#contactModal"><i class="fas fa-phone fa-3x mb-3 text-muted"></i></button>
+                        
+                        <div>+1 (336) 875-0766</div>
                 </div>
                 <div class="col-lg-4 mr-auto text-center">
-                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <button class="btn" data-toggle="modal" data-target="#contactModal"><i class="fas fa-envelope fa-3x mb-3 text-muted"></i></button>
+                    
                     <!-- Make sure to change the email address in anchor text AND the link below! -->
-                    <a class="d-block" href="shaheerahmed23@gmail.com">contact@yourwebsite.com</a>
+                    <a class="d-block" href="shaheerahmed23@gmail.com">shaheerahmed23@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -262,21 +264,21 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">R1</div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">R1</div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4" text-align:center>C1</div>
-                        <div class="col-md-4" text-right>C2</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-*-*">C4</div><br> test &gt;
-                        <div class="col-*-*">C5</div>
-                        <div class="col-*-*">C6</div>
-                    </div>
-                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" text-align:center>C1</div>
+                                <div class="col-md-4" text-right>C2</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-*-*">C4</div><br> test &gt;
+                                <div class="col-*-*">C5</div>
+                                <div class="col-*-*">C6</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -344,11 +346,31 @@
 
             </div>
         </div>
+
+        <!--Contact Modal-->
+        <div id="contactModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Me!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thing that'll send me emails </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!--Picture Modals Section-->
     <div>
     <div id="MathModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -361,8 +383,8 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col text-center h2">
-                                User Controlled Loop Example
+                            <div class="col text-center h4">
+                                Enter in 5 numbers to get the sum, product, mean, and find out the smallest and largest numbers! 
                             </div>
                         </div>
                         <hr style="border:2px solid black" />
@@ -450,7 +472,7 @@ $("#mathFunction").click(function () {
     </div>
 
     <div id="PalindromeModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -460,14 +482,14 @@ $("#mathFunction").click(function () {
                     <div class="modal-body">
                         <div class="container col-lg-12">
                             <div class="row">
-                                <div class="col text-center h2">
-                                    Palindrome
+                                <div class="col text-center h4">
+                                    Enter in any word to see if 
                                 </div>
                             </div>
                             <hr style="border:2px solid black" />
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="inputPal" />
+                                    <input type="text" class="form-control" id="inputPal" placeholder="Type in a word!" />
                                     <div class="row">
                                         <div class="col">
                                             <br /><button id="palindrome" class="btn btn-primary btn-md">See if your word is a Palindrome!</button><br />
@@ -492,7 +514,9 @@ $("#mathFunction").click(function () {
                 var outPal = (ogWord + " IS a palindrome! :D");
                 $("#resultsPal").text(outPal);
             } else {
-                var outPal = (ogWord + " is NOT a palindrome! " + "*" +  revWord + "*" + " is not the same as " + "*" + ogWord + "*");
+                var outPal = (ogWord + " is NOT a palindrome! " + "*" +
+                    revWord + "*" + " is not the same as " + "*" +
+                    ogWord + "*");
                 $("#resultsPal").text(outPal);
             }
                                     </pre>
@@ -527,7 +551,7 @@ $("#mathFunction").click(function () {
     </div>
 
     <div id="FacModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -545,7 +569,7 @@ $("#mathFunction").click(function () {
                         <div class="col-md">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" id="inputFact" />
+                                    <input type="number" class="form-control" id="inputFact" placeholder="Type in a number!"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label id="resultsFact"></label>
@@ -579,35 +603,45 @@ $("#mathFunction").click(function () {
     </div>
 
     <div id="FizzBuzzModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">FizzBuzz! </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="row">
                     <div class="modal-body">
                         <div class="container">
-                            <div class="row">
-                                <div class="col text-center h2">
-                                    Fizz Buzz
+                            <div>
+                                <div class="row">
+                                    <div class="col text-center h2">
+                                        Fizz Buzz
+                                    </div>
                                 </div>
-                            </div>
-                            <hr style="border:2px solid black" />
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" id="inputFizzBuzz1" />
-                                    <input type="text" class="form-control" id="inputFizzBuzz2" />
-                                    <div class="row">
-                                        <div class="col">
-                                            <br /><button id="fizzbuzz" class="btn btn-primary btn-md">Calculate FizzBuzz!</button><br />
-                                            <br /><button id="fizzbuzzClear" class="btn btn-outline-primary">Clear</button><br />
-                                            <br /><button class="btn btn-primary btn-sm" id="btnFBCode">Show</button><br />
+                                <hr style="border:2px solid black" />
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="number" class="form-control" id="inputFizzBuzz1" placeholder="Type in a number!" />
+                                        <input type="number" class="form-control" id="inputFizzBuzz2" placeholder="Type in a number!" />
+                                        <div class="row">
+                                            <div class="col">
+                                                <br /><button id="fizzbuzz" class="btn btn-primary btn-md">Calculate FizzBuzz!</button><br />
+                                                <br /><button id="fizzbuzzClear" class="btn btn-outline-primary">Clear</button><br />
+                                                <br /><button class="btn btn-primary btn-sm" id="btnFBCode">Show</button><br />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col" id="fizzBuzzCode">
-                                        <pre class="brush: js">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <h4>Results:</h4>
+                                            <span id="resultFizzBuzz"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row" id="fizzBuzzCode">
+                                    <br /><br />
+                                    <pre class="brush: js">
             var num1 = Number($("#inputFizzBuzz1").val());
             var num2 = Number($("#inputFizzBuzz2").val());
             var output = "";
@@ -627,18 +661,9 @@ $("#mathFunction").click(function () {
             }
             $("#resultFizzBuzz").text(output);
                                     </pre>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <h4>Results:</h4>
-                                        <span id="resultFizzBuzz"></span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -719,12 +744,13 @@ $("#mathFunction").click(function () {
                 revWord += word.substr(n, 1);
             }
             revWord = revWord.toLowerCase().replace(/\s/g, '');
-            var message = "";
             if (revWord == word) {
                 var outPal = (ogWord + " IS a palindrome! :D");
                 $("#resultsPal").text(outPal);
             } else {
-                var outPal = (ogWord + " is NOT a palindrome! " + "*" +  revWord + "*" + " is not the same as " + "*" + ogWord + "*");
+                var outPal = (ogWord + " is NOT a palindrome! " + "*" +
+                    revWord + "*" + " is not the same as " + "*" +
+                    ogWord + "*");
                 $("#resultsPal").text(outPal);
             }
         })
@@ -745,7 +771,6 @@ $("#mathFunction").click(function () {
             for (let test = 1; test <= 100; test++) {
                 if (test % num1 == 0 && test % num2 == 0) {
                     output += "FIZZBUZZ, "
-                    output.fontcolor("purple")
                 } else if (test % num1 == 0) {
                     output += "FIZZ, "
                     output.fontcolor("red")
@@ -798,7 +823,6 @@ $("#mathFunction").click(function () {
         $("#btnFBCode").click(function () {
             $("#fizzBuzzCode").toggle()
         })
-
     </script>
 
   
