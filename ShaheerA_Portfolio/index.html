@@ -88,6 +88,7 @@
                     <h2 class="text-white mt-0">About Me!</h2>
                     <hr class="divider light my-4">
                     <p class="text-white-50 mb-4">I am Shaheer Ahmed and I am currently enrolled in the CoderFoundry program!</p>
+                    <p class="text-white-50 mb-4">I am Shaheer Ahmed and you're on my website !</p>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                 </div>
             </div>
@@ -133,7 +134,11 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="bg-primary">
+        <br /><br />
+            <h2 class="text-center mt-0 text-white">Coding Challenges!</h2>
+            <hr class="divider light my-4" />
+        <br />
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6"> 
@@ -365,7 +370,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!--Picture Modals Section-->
     <div>
@@ -482,8 +486,11 @@ $("#mathFunction").click(function () {
                     <div class="modal-body">
                         <div class="container col-lg-12">
                             <div class="row">
-                                <div class="col text-center h4">
-                                    Enter in any word to see if 
+                                <div class="col text-center">
+                                    
+                                    <h5>A palindrome is a word which is the same backwards and forwards, words such as "Racecar" and "Hannah"
+                                    are both palindromes! You can type in a single word or entire sentence to see if it's a valid palindrome!
+                                    <br />Give it a try!</h5>
                                 </div>
                             </div>
                             <hr style="border:2px solid black" />
@@ -562,7 +569,8 @@ $("#mathFunction").click(function () {
                     <div class="container">
                         <div class="row">
                             <div class="col text-center h2">
-                                Factorial
+                                <h5>A factorial is the product of an integer and all of the integers below it,
+                                4! would be 4 * 3 * 2 * 1 which would equal 24.</h5>
                             </div>
                         </div>
                         <hr style="border:2px solid black" />
@@ -614,8 +622,10 @@ $("#mathFunction").click(function () {
                         <div class="container">
                             <div>
                                 <div class="row">
-                                    <div class="col text-center h2">
-                                        Fizz Buzz
+                                    <div class="col text-center">
+                                        <h3>Type in any two numbers (from 1-100) and see if FizzBuzz activates!</h3><br />
+                                        <h5>You will see the multiples of the first number as "Fizz" and multiples of the second
+                                        number as "Buzz". Multiples of both numbers will be "FizzBuzz"!</h5>
                                     </div>
                                 </div>
                                 <hr style="border:2px solid black" />
@@ -633,7 +643,7 @@ $("#mathFunction").click(function () {
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
-                                            <h4>Results:</h4>
+                                            <h5>Results:</h5>
                                             <span id="resultFizzBuzz"></span>
                                         </div>
                                     </div>
@@ -770,6 +780,7 @@ $("#mathFunction").click(function () {
             var output = "";
             for (let test = 1; test <= 100; test++) {
                 if (test % num1 == 0 && test % num2 == 0) {
+                    output.fontcolor("red")
                     output += "FIZZBUZZ, "
                 } else if (test % num1 == 0) {
                     output += "FIZZ, "
