@@ -73,6 +73,7 @@
     <Content Include="Fonts\WebFonts\fa-regular-400.svg" />
     <Content Include="Fonts\WebFonts\fa-solid-900.svg" />
     <Content Include="Images\favicon.ico" />
+    <Content Include="Images\bg-masthead.jpg" />
     <Content Include="Scripts\creative.min.js" />
     <Content Include="Fonts\all.min.css" />
     <Content Include="Fonts\magnific-popup.css" />
@@ -82,7 +83,7 @@
     <Content Include="Images\4.jpg" />
     <Content Include="Images\5.jpg" />
     <Content Include="Images\6.jpg" />
-    <Content Include="Images\bg-masthead.jpg" />
+    <None Include="Images\og background" />
     <Content Include="Images\FullsizeImg\1.jpg" />
     <Content Include="Images\FullsizeImg\2.jpg" />
     <Content Include="Images\FullsizeImg\3.jpg" />
