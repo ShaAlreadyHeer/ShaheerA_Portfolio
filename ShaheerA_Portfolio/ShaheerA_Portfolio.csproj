@@ -72,8 +72,8 @@
     <Content Include="Fonts\WebFonts\fa-brands-400.svg" />
     <Content Include="Fonts\WebFonts\fa-regular-400.svg" />
     <Content Include="Fonts\WebFonts\fa-solid-900.svg" />
-    <Content Include="Images\favicon.ico" />
     <Content Include="Images\bg-masthead.jpg" />
+    <Content Include="Images\favicon.ico" />
     <Content Include="Scripts\creative.min.js" />
     <Content Include="Fonts\all.min.css" />
     <Content Include="Fonts\magnific-popup.css" />
